@@ -31,10 +31,10 @@ $ cd nginx
 $ docker build -t victorhugoaraujo/nginx:prod . -f Dockerfile.prod
 
 # Run laravel container
-$ docker run -d --network laranet --name laravel victorhugoaraujo/laravel:prod
+$ docker run -d --network <network-name> --name laravel victorhugoaraujo/laravel:prod
 
 # Run nginx container
-$ docker run -d --network laranet --name nginx -p 8080:80 victorhugoaraujo/nginx:prod
+$ docker run -d --network <network-name> --name nginx -p 8080:80 victorhugoaraujo/nginx:prod
 
 # Go to your browser
 localhost:8080
