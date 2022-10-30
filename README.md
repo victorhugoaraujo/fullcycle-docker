@@ -6,9 +6,12 @@ This project was created to apply multistage building using Nginx as a reverse p
 The following technologies was used to made this project:
 
 -  [Docker](https://www.docker.com/)
+-  [Docker-Compose](https://docs.docker.com/engine/reference/commandline/compose/)
 -  [Laravel Nginx config](https://laravel.com/docs/9.x/deployment#nginx)
 
 ## :iphone: Running the application
+
+Doing it manually
 ```bash
 To run the application please follow the next steps:
 
@@ -35,6 +38,15 @@ $ docker run -d --network <network-name> --name laravel victorhugoaraujo/laravel
 
 # Run nginx container
 $ docker run -d --network <network-name> --name nginx -p 8080:80 victorhugoaraujo/nginx:prod
+
+# Go to your browser
+localhost:8080
+```
+
+Using docker-compose
+
+```bash
+$ docker-compose up
 
 # Go to your browser
 localhost:8080
