@@ -5,7 +5,7 @@ This project was created to:
  - Use docker-compose to build images
  - Create Mysql database with NodeJS
  - Dependencies between two containers
- - Use Dockerize to wait dependecies
+ - Use Dockerize to wait dependencies
 
 
 ## :hammer: Technologies
